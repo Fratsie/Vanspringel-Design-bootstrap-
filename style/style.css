@@ -1,3 +1,143 @@
+:root{
+    --black: #252525;
+    --medium-black: #232B2B;
+    --dark-gray: rgba(3,3,3,.5);
+    --gray: rgba(3,3,3,.15);
+    --dark-blue: #345779;
+    --blue: #557b9a;
+    --light-blue: #8fa7af;
+    --orange: #fc9050;
+    --yellow: #ffc775;
+    --main-font: "Bungee", serif;
+}
+
+::selection{
+    background-color: var(--blue);
+    color: white;
+}
+
+nav{
+    min-height: 15vh;
+}
+
+nav ul{
+    position: absolute;
+    background-color: var(--light-blue);
+}
+
+nav a{
+    color: white;
+}
+
+nav a:hover{
+    color: #ddd;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+#home{
+    min-height: 85vh;
+}
+
 .navbar-toggler{
-    background-color: orange;
+    background-color: var(--blue);
+}
+
+.product p, .product h3{
+    color: var(--black);
+}
+
+.primary{
+    background-image: linear-gradient(to left, var(--orange) 50%, var(--yellow) 50%);
+    background-size: 210% 100%;
+    background-position: right;
+    color: white;
+}
+
+.h-full{
+    min-height: 100vh;
+}
+
+.font{
+    font-family: var(--main-font);
+}
+
+.fs-2{
+    font-size: 1rem;
+}
+
+.primary:hover{
+    background-position: left;
+    color: white;
+}
+
+.bg-light-black{
+    background-color: var(--black);
+    color: white;
+}
+
+.bg-grey{
+    background-color: var(--gray);
+    color: black;
+}
+
+.bg-dark-blue{
+    background-color: var(--dark-blue);
+    color: white;
+}
+
+.bg-blue{
+    background-color: var(--blue);
+    color: black;
+}
+
+.bg-light-blue{
+    background-color: var(--light-blue);
+    color: white;
+}
+
+.bg-orange{
+    background-color: var(--orange);
+    color: white;
+}
+
+.bg-yellow{
+    background-color: var(--yellow);
+    color: black;
+}
+
+.t-short{
+    transition: .25s;
+}
+
+@media screen and (min-width: 1200px){
+    nav ul{
+        position: inherit;
+    }
+
+    .product p, .product h3{
+        color: white;
+    }
+
+    .product{
+        position: relative;
+    }
+
+    .product div{
+        position: absolute;
+        background-color: rgba(0,0,0,.25);
+        top: 0;
+        opacity: 0;
+    }
+
+    .product div:hover{
+        opacity: 1;
+    }
 }
