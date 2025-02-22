@@ -1,6 +1,7 @@
 :root{
     --black: #252525;
     --medium-black: #232B2B;
+    --black-fade: rgba(0,0,0,.25);
     --dark-gray: rgba(3,3,3,.5);
     --gray: rgba(3,3,3,.15);
     --dark-blue: #345779;
@@ -8,6 +9,7 @@
     --light-blue: #8fa7af;
     --orange: #fc9050;
     --yellow: #ffc775;
+    --nav-white: #fff;
     --main-font: "Bungee", serif;
 }
 
@@ -26,15 +28,28 @@ nav ul{
 }
 
 nav a{
-    color: white;
+    color: var(--nav-white);
 }
 
 nav a:hover{
-    color: #ddd;
+    color: var(--orange);
 }
 
 h1{
     font-size: 3rem;
+}
+
+h1, h2, h3{
+    color: var(--blue);
+}
+
+input, textarea{
+    background-color: #333;
+    border: none;
+}
+
+textarea{
+    min-height: 150px;
 }
 
 img{
@@ -42,8 +57,26 @@ img{
     height: auto;
 }
 
+footer a, .carousel-caption a{
+    color: var(--light-blue);
+    text-decoration: none;
+}
+
+footer a:hover, .carousel-caption a:hover{
+    color: var(--orange);
+}
+
 #home{
     min-height: 85vh;
+}
+
+#checkbox{
+    accent-color: var(--orange);
+}
+
+#checkbox input{
+    height: 15px;
+    width: 15px;
 }
 
 .navbar-toggler{
@@ -59,6 +92,22 @@ img{
     background-size: 210% 100%;
     background-position: right;
     color: white;
+}
+
+.primary-link{
+    color: var(--dark-blue);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.primary-link:hover{
+    color: var(--blue);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    background-color: rgba(0,0,0,.25);
+    height: 40px;
+    width: 40px;
 }
 
 .h-full{
@@ -80,6 +129,11 @@ img{
 
 .bg-light-black{
     background-color: var(--black);
+    color: white;
+}
+
+.bg-fade-black{
+    background-color: var(--black-fade);
     color: white;
 }
 
@@ -132,7 +186,7 @@ img{
 
     .product div{
         position: absolute;
-        background-color: rgba(0,0,0,.25);
+        background-color: rgba(0,0,0,.5);
         top: 0;
         opacity: 0;
     }
