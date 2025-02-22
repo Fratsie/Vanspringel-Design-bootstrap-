@@ -24,7 +24,6 @@ nav{
 
 nav ul{
     position: absolute;
-    background-color: var(--light-blue);
 }
 
 nav a{
@@ -66,6 +65,12 @@ footer a:hover, .carousel-caption a:hover{
     color: var(--orange);
 }
 
+#homeWrap{
+    background-image: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("/assets/hero_option.jpg");
+    background-size: auto 100%;
+    background-position: 20%;
+}
+
 #home{
     min-height: 85vh;
 }
@@ -79,10 +84,6 @@ footer a:hover, .carousel-caption a:hover{
     width: 15px;
 }
 
-.navbar-toggler{
-    background-color: var(--blue);
-}
-
 .product p, .product h3{
     color: var(--black);
 }
@@ -92,6 +93,7 @@ footer a:hover, .carousel-caption a:hover{
     background-size: 210% 100%;
     background-position: right;
     color: white;
+    font-weight: bold;
 }
 
 .primary-link{
@@ -172,6 +174,11 @@ footer a:hover, .carousel-caption a:hover{
 }
 
 @media screen and (min-width: 1200px){
+    #homeWrap{
+        background-size: 100% 100%;
+        background-position: left;
+    }
+
     nav ul{
         position: inherit;
     }
