@@ -66,7 +66,7 @@ footer a:hover, .carousel-caption a:hover{
 }
 
 #homeWrap{
-    background-image: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("/assets/hero_option.jpg");
+    background-image: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("../assets/hero_option.jpg");
     background-size: auto 100%;
     background-position: 20%;
 }
