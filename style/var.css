@@ -11,4 +11,9 @@
     --yellow: #ffc775;
     --nav-white: #fff;
     --main-font: "Bungee", serif;
+
+    --primary-button: var(--orange);
+    --primary-button-hover: var(--yellow);
+    --secondary-button: #6A7F95;
+    --secondary-button-hover: #8FA3B8;
 }

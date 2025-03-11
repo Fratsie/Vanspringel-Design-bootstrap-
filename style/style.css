@@ -48,10 +48,11 @@ footer a, .carousel-caption a{
 
 footer a:hover, .carousel-caption a:hover{
     color: var(--orange);
-}
+} 
 
 #homeWrap{
-    background-image: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("../assets/hero_option.jpg");
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../assets/hero_option.jpg");
+    background-attachment: fixed;
     background-size: auto 100%;
     background-position: 20%;
 }
@@ -71,14 +72,6 @@ footer a:hover, .carousel-caption a:hover{
 
 .product p, .product h3{
     color: var(--black);
-}
-
-.primary{
-    background-image: linear-gradient(to left, var(--orange) 50%, var(--yellow) 50%);
-    background-size: 210% 100%;
-    background-position: right;
-    color: white;
-    font-weight: bold;
 }
 
 .primary-link{

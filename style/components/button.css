@@ -1,0 +1,27 @@
+.button{
+    border: none;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.primary-button{
+    background-image: linear-gradient(to left, var(--primary-button) 50%, var(--primary-button-hover) 50%);
+    background-size: 201% 100%;
+    background-position: right;
+
+    &:hover{
+        background-position: left;
+    }
+}
+
+.secondary-button{
+    background-image: linear-gradient(to left, var(--secondary-button) 50%, var(--secondary-button-hover) 50%);
+    background-size: 201% 100%;
+    background-position: right;
+
+    &:hover{
+        background-position: left;
+    }
+}
