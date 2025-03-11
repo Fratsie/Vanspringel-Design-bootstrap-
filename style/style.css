@@ -1,18 +1,3 @@
-:root{
-    --black: #252525;
-    --medium-black: #232B2B;
-    --black-fade: rgba(0,0,0,.25);
-    --dark-gray: rgba(3,3,3,.5);
-    --gray: rgba(3,3,3,.15);
-    --dark-blue: #345779;
-    --blue: #557b9a;
-    --light-blue: #8fa7af;
-    --orange: #fc9050;
-    --yellow: #ffc775;
-    --nav-white: #fff;
-    --main-font: "Bungee", serif;
-}
-
 ::selection{
     background-color: var(--blue);
     color: white;
